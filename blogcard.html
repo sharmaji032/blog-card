@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+        }
+
+        /* Blog Card Styles */
+        /* Center the card */
+        .container {
+            display: flex;
+            flex-direction: column;
+
+
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        /* Image */
+        .container img {
+            width: 100%;
+            height: auto;
+            border-radius: 17px;
+            padding: 10px 10px;
+
+        }
+
+        /* Title */
+        h1 {
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        /* Paragraph */
+        p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: 394150;
+            margin-left: 10px;
+        }
+
+        /* Horizontal Rule */
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        /* Name */
+        h3 {
+            margin-top: 0px;
+            font-size: 15px;
+            font-weight: 400;
+            color: #939393;
+            margin-left: 14px;
+
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+
+            /* Adjust the width and height of the card */
+            .container {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Adjust the layout of the elements */
+            h1,
+            p,
+            h3 {
+                margin-top: 10px;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            /* Adjust the position of the name */
+            h3 {
+                margin-top: 20px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_640.jpg" alt="Image">
+            </div>
+            <h1> Title </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quibusdam!</p>
+            <hr>
+        </div>
+        <h3>Lorem, ipsum.</h3>
+    </div>
+</body>
+
+</html>
